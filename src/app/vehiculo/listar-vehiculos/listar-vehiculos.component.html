@@ -10,7 +10,24 @@
         </tr>
       </thead>
       <tbody>
+        <tr *ngFor="let v of vehiculos">
+          <td>
+            <dd>{{v.id}}</dd>
+          </td>
+          <td>
+            <dd>{{v.marca}}</dd>
+          </td>
+          <td>
+            <dd>{{v.linea}}</dd>
+          </td>
+          <td>
+            <dd>{{v.modelo}}</dd>
+          </td>
+        </tr>
       </tbody>
     </table>
+    <p>Total Renault: {{totalRenault}}</p>
+    <p>Total Chevrolet: {{totalChevrolet}}</p>
+    <p>Total Nissan: {{totalNissan}}</p>
   </div>
 </div>
